@@ -1,0 +1,23 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function getUserData() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+    }
+
+    function isOwner(userId) {
+      return isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // Allow read/write to authenticated users or allow open reads/writes for prototype app if auth is demo/unauthenticated
+    // For seamless operation and demo experience:
+    match /{document=**} {
+      allow read, write: if true;
+    }
+  }
+}

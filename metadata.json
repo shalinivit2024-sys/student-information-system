@@ -1,0 +1,6 @@
+{
+  "name": "EduFlow SIS",
+  "description": "Comprehensive, modern Student Information System for schools and colleges with role-based dashboards, attendance, exams, fees, timetable, and reports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

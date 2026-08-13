@@ -1,0 +1,52 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "System user profiles including role (admin, teacher, student, parent), name, email, avatar, and linked entity ID."
+    },
+    "students": {
+      "title": "Students",
+      "description": "Detailed student profiles with roll number, class, section, guardian info, contact, status."
+    },
+    "teachers": {
+      "title": "Teachers",
+      "description": "Faculty details, subject specializations, qualifications, email, contact, assigned classes."
+    },
+    "classes": {
+      "title": "Classes",
+      "description": "Academic classes/sections, grade level, assigned class teacher, total capacity."
+    },
+    "subjects": {
+      "title": "Subjects",
+      "description": "Academic subjects, course codes, credits, department."
+    },
+    "attendance": {
+      "title": "Attendance",
+      "description": "Daily attendance records per class, student ID, date, status (present, absent, late)."
+    },
+    "exams": {
+      "title": "Exams",
+      "description": "Examination schedules, term, date, subject, max marks, passing marks."
+    },
+    "marks": {
+      "title": "Marks",
+      "description": "Student exam scores, grades, teacher remarks."
+    },
+    "fees": {
+      "title": "Fees",
+      "description": "Student fee invoices, breakdown, due date, payment status, amount paid."
+    },
+    "timetables": {
+      "title": "Timetables",
+      "description": "Weekly schedule slots per class with period, subject, teacher, room number."
+    },
+    "announcements": {
+      "title": "Announcements",
+      "description": "School notices, target audience, priority, date, content."
+    },
+    "schoolSettings": {
+      "title": "School Settings",
+      "description": "Global institution metadata, logo, academic year, grading scale."
+    }
+  }
+}
